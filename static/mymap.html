@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+<style>
+    #map_1 {
+    position: relative;
+    width: 100.0%;
+    height: 100.0%;
+    left: 0.0%;
+    top: 0.0%;
+}
+.leaflet-container { font-size: 1rem; }
+.leaflet-touch .leaflet-bar a {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    font-size: 80px;
+    background-size: 1000px;
+
+}
+.fullscreen-icon {
+    background-size: 50px 50px!important;
+
+}
+
+
+
+.leaflet-draw-toolbar .leaflet-draw-draw-polyline {
+
+    background-position: -0px -1px !important;
+
+}
+.leaflet-touch .leaflet-draw-toolbar .leaflet-draw-draw-polygon {
+    background-position: -100px -1px !important;
+}
+.leaflet-touch .leaflet-draw-toolbar .leaflet-draw-draw-rectangle {
+    background-position: -200px -1px !important;
+}
+.leaflet-touch .leaflet-draw-toolbar .leaflet-draw-draw-circle {
+    background-position: -300px -1px !important;
+}
+.leaflet-touch .leaflet-draw-toolbar .leaflet-draw-draw-marker {
+    background-position: -400px -1px !important;
+}
+.leaflet-touch .leaflet-draw-toolbar .leaflet-draw-draw-circlemarker {
+    background-position: -500px -1px !important;
+}
+.leaflet-touch .leaflet-draw-toolbar .leaflet-draw-edit-remove {
+    background-position: -600px -1px !important;
+}
+.leaflet-touch .leaflet-draw-toolbar .leaflet-draw-edit-edit {
+    background-position: -700px -1px !important;
+}
+.leaflet-control-geocoder-icon{
+    width: 100px !important;
+    height: 100px !important;
+    font-size: 60px;
+}
+.leaflet-control-geocoder-form input {
+    font-size: 200% !important;
+    border: 0;
+    background-color: transparent;
+    width: 400px !important;
+}
+.leaflet-container {
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-size: 2.75rem !important;
+    line-height: 1.5;
+}
+.leaflet-draw-actions a {
+    font-size: 2.75rem !important;
+} 
+.leaflet-control-geocoder .leaflet-control-geocoder-alternatives a {
+    width: inherit;
+    height: inherit;
+    line-height: inherit;
+    font-size: 40px;
+}
+.leaflet-control-geocoder .leaflet-control-geocoder-alternatives li {
+    width: 500px !important;
+}
+
+</style>        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.fullscreen/1.4.2/Control.FullScreen.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.fullscreen/1.4.2/Control.FullScreen.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.2/leaflet.draw.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.2/leaflet.draw.css"/>
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_1" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1 = L.map(
+                "map_1",
+                {
+                    center: [36.500097469583, 2.8782173307732],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 20,
+                    zoomControl: true,
+                    preferCanvas: false,
+                    eeInitialize: true,
+                    addGoogleMap: true,
+                    pluginLatlngpopup: false,
+                    pluginFullscreen: true,
+                    pluginDraw: true,
+                    DrawExport: false,
+                    pluginMinimap: false,
+                    pluginLayercontrol: false,
+                    locateControl: false,
+                    searchControl: true,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_369e7f1a073f2a8a0c33b30f4d5e32f6 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 30, "maxZoom": 30, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_1);
+            var tile_layer_2912e0340db25ab992208c528334bd08 = L.tileLayer(
+                "https://mt1.google.com/vt/lyrs=m\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 22, "maxZoom": 22, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_1);
+
+            var tile_layer_7ae07bcd27d2b9d51fe199b0f106ad0a = L.tileLayer(
+                "https://mt1.google.com/vt/lyrs=s\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 22, "maxZoom": 22, "minZoom": 0, "noWrap": false, "opacity": 1.0, "subdomains": "abc", "tms": false}
+            ).addTo(map_1);
+    
+
+        
+    
+            L.control.fullscreen(
+                {"forceSeparateButton": false, "position": "topleft", "title": "Full Screen", "titleCancel": "Exit Full Screen"}
+            ).addTo(map_1);
+        
+    
+            var options = {
+              position: "topleft",
+              draw: { 
+                polyline: {
+                shapeOptions: {
+                    color: 'rgb(26, 229, 11)',
+                    weight: 10
+                }
+            }
+              },
+              edit: {},
+            }
+            // FeatureGroup is to store editable layers.
+            var drawnItems = new L.featureGroup().addTo(
+                map_1
+            );
+            options.edit.featureGroup = drawnItems;
+            var draw_control_008646abd218a0f6b3631ed8fac56507 = new L.Control.Draw(
+                options
+            ).addTo( map_1 );
+            map_1.on(L.Draw.Event.CREATED, function(e) {
+                var layer = e.layer,
+                    type = e.layerType;
+                var coords = JSON.stringify(layer.toGeoJSON());
+                layer.on('click', function() {
+                    alert(coords);
+                    console.log(JSON.stringify({type:type , cords:layer._latlngs}));
+                });
+                drawnItems.addLayer(layer);
+             });
+            map_1.on('draw:created', function(e) {
+                drawnItems.addLayer(e.layer);
+            });
+
+
+            
+        
+    
+            L.Control.geocoder(
+                {"collapsed": true, "defaultMarkGeocode": true, "position": "topleft"}
+            ).on('markgeocode', function(e) {
+                map_1.setView(e.geocode.center, 11);
+            }).addTo(map_1);
+
+        
+    
+            // map_1.fitBounds(
+            //     [[36.5, 2.87], [36.5, 2.87]],
+            //     {"maxZoom": 15}
+            // );
+
+            var customUrl = 'http://stamen-tiles-c.a.ssl.fastly.net/toner-labels/{z}/{x}/{y}@2x.png';
+            var customAttrib = 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+            'Imagery © <a href="http://stamen.com">Stamen</a>';
+
+            var labels_layer = L.tileLayer(customUrl, {
+            attribution: customAttrib,
+            subdomains: 'abcd',
+            tileSize: 512,
+            zoomOffset: -1,
+            maxZoom: 18,
+            detectRetina: true
+            }).addTo(map_1);
+
+    
+            var layer_control = {
+                base_layers : {
+                    "open map":tile_layer_369e7f1a073f2a8a0c33b30f4d5e32f6},
+
+                
+                overlays :  {
+                    "label":labels_layer,
+                    "Google Maps" : tile_layer_2912e0340db25ab992208c528334bd08,
+                    "Google Satellite" : tile_layer_7ae07bcd27d2b9d51fe199b0f106ad0a,
+
+                },
+            };
+            var control= L.control.layers(
+                layer_control.base_layers,
+                layer_control.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_1);
+        
+    
+        map_1.on('draw:created', function (e) {
+            var type = e.layerType,
+                layer = e.layer;
+            if (type === 'polyline' || type ==='polygon' || type === 'rectangle') {
+                // here you got the polygon points
+                var cords = {type:type , cords: layer._latlngs};
+                console.log(JSON.stringify(cords))
+        }
+        });
+
+
+
+        const element=document.getElementsByClassName("leaflet-control-zoom-fullscreen fullscreen-icon")
+        element[0].parentNode.removeChild(element[0]);
+
+        
+
+
+ 
+
+
+
+
+
+        
+</script>
+</html>

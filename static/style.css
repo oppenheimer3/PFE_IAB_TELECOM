@@ -1,0 +1,77 @@
+#map_1 {
+    position: relative;
+    width: 100.0%;
+    height: 100.0%;
+    left: 0.0%;
+    top: 0.0%;
+}
+.leaflet-container { font-size: 1rem; }
+.leaflet-touch .leaflet-bar a {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    font-size: 80px;
+    background-size: 1000px;
+
+}
+.fullscreen-icon {
+    background-size: 50px 50px!important;
+
+}
+
+
+
+.leaflet-draw-toolbar .leaflet-draw-draw-polyline {
+
+    background-position: -0px -1px !important;
+
+}
+.leaflet-touch .leaflet-draw-toolbar .leaflet-draw-draw-polygon {
+    background-position: -100px -1px !important;
+}
+.leaflet-touch .leaflet-draw-toolbar .leaflet-draw-draw-rectangle {
+    background-position: -200px -1px !important;
+}
+.leaflet-touch .leaflet-draw-toolbar .leaflet-draw-draw-circle {
+    background-position: -300px -1px !important;
+}
+.leaflet-touch .leaflet-draw-toolbar .leaflet-draw-draw-marker {
+    background-position: -400px -1px !important;
+}
+.leaflet-touch .leaflet-draw-toolbar .leaflet-draw-draw-circlemarker {
+    background-position: -500px -1px !important;
+}
+.leaflet-touch .leaflet-draw-toolbar .leaflet-draw-edit-remove {
+    background-position: -600px -1px !important;
+}
+.leaflet-touch .leaflet-draw-toolbar .leaflet-draw-edit-edit {
+    background-position: -700px -1px !important;
+}
+.leaflet-control-geocoder-icon{
+    width: 100px !important;
+    height: 100px !important;
+    font-size: 60px;
+}
+.leaflet-control-geocoder-form input {
+    font-size: 200% !important;
+    border: 0;
+    background-color: transparent;
+    width: 400px !important;
+}
+.leaflet-container {
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-size: 2.75rem !important;
+    line-height: 1.5;
+}
+.leaflet-draw-actions a {
+    font-size: 2.75rem !important;
+} 
+.leaflet-control-geocoder .leaflet-control-geocoder-alternatives a {
+    width: inherit;
+    height: inherit;
+    line-height: inherit;
+    font-size: 40px;
+}
+.leaflet-control-geocoder .leaflet-control-geocoder-alternatives li {
+    width: 500px !important;
+}

@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>2748</width>
+    <height>1547</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:black;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="display_label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>851</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Bauhaus 93</family>
+      <pointsize>22</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(61, 61, 61);
+color:rgb(147, 255, 58);
+</string>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>2160</x>
+      <y>20</y>
+      <width>541</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_7">
+     <item row="0" column="0">
+      <widget class="QPushButton" name="connect_pi">
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">        QPushButton {
+            background-color: rgb(41, 152, 255); 
+			  color: white;
+			  border-radius: 10px;
+        }
+        QPushButton:hover {
+            background-color: rgb(19, 88, 152);
+			  color:rgb(213, 235, 255)
+        }
+			QPushButton:disabled {
+        background-color:rgb(79, 79, 79);
+		color:rgb(172, 172, 172)
+       }</string>
+       </property>
+       <property name="text">
+        <string>Connect to Raspberrypi</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QPushButton" name="connect_button">
+       <property name="font">
+        <font>
+         <family>Berlin Sans FB Demi</family>
+         <pointsize>16</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">        QPushButton {
+            background-color: rgb(41, 152, 255); 
+			  color: white;
+			  border-radius: 10px;
+        }
+        QPushButton:hover {
+            background-color: rgb(19, 88, 152);
+			  color:rgb(213, 235, 255)
+        }
+</string>
+       </property>
+       <property name="text">
+        <string>Connect</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>140</y>
+      <width>2001</width>
+      <height>1361</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout"/>
+   </widget>
+   <widget class="QPlainTextEdit" name="connection_string">
+    <property name="geometry">
+     <rect>
+      <x>1700</x>
+      <y>20</y>
+      <width>431</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(74, 74, 74);
+color: rgb(4, 213, 0);
+</string>
+    </property>
+    <property name="plainText">
+     <string>com10</string>
+    </property>
+    <property name="placeholderText">
+     <string>tcp:127.0.0.1:5762</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>130</y>
+      <width>641</width>
+      <height>681</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">            QFrame {
+                border: 2px solid green;
+            }</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QWidget" name="layoutWidget_5">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>320</y>
+       <width>451</width>
+       <height>341</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_5">
+      <item row="5" column="0">
+       <widget class="QPushButton" name="drone_image_button">
+        <property name="font">
+         <font>
+          <family>Berlin Sans FB Demi</family>
+          <pointsize>15</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">        QPushButton {
+            background-color: rgb(41, 152, 255); 
+			  color: white;
+			  border-radius: 10px;
+			  font-size : large;
+        }
+        QPushButton:hover {
+            background-color: rgb(19, 88, 152);
+			  color:rgb(213, 235, 255)
+        }
+</string>
+        </property>
+        <property name="text">
+         <string>Upload Drone Image</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QPushButton" name="mission_button">
+        <property name="font">
+         <font>
+          <family>Berlin Sans FB Demi</family>
+          <pointsize>15</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+            background-color: rgb(41, 152, 255); 
+			  color: white;
+			  border-radius: 10px;
+        }
+QPushButton:hover {
+            background-color: rgb(19, 88, 152);
+			  color:rgb(213, 235, 255)
+        }
+
+QPushButton:disabled {
+        background-color:rgb(79, 79, 79);
+		color:rgb(172, 172, 172)
+}</string>
+        </property>
+        <property name="text">
+         <string>Load Mission</string>
+        </property>
+        <property name="autoDefault">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QPushButton" name="download">
+        <property name="font">
+         <font>
+          <family>Berlin Sans FB Demi</family>
+          <pointsize>15</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">        QPushButton {
+            background-color: rgb(41, 152, 255); 
+			  color: white;
+			  border-radius: 10px;
+        }
+        QPushButton:hover {
+            background-color: rgb(19, 88, 152);
+			  color:rgb(213, 235, 255)
+        }
+QPushButton:disabled {
+        background-color:rgb(79, 79, 79);
+		color:rgb(172, 172, 172)
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Download mission data</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QPushButton" name="arm_button">
+        <property name="font">
+         <font>
+          <family>Berlin Sans FB Demi</family>
+          <pointsize>15</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">        QPushButton {
+            background-color: rgb(41, 152, 255); 
+			  color: white;
+			  border-radius: 10px;
+        }
+        QPushButton:hover {
+            background-color: rgb(19, 88, 152);
+			  color:rgb(213, 235, 255)
+        }
+QPushButton:disabled {
+        background-color:rgb(79, 79, 79);
+		color:rgb(172, 172, 172)
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Start</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QPushButton" name="simulation_button">
+        <property name="font">
+         <font>
+          <family>Berlin Sans FB Demi</family>
+          <pointsize>15</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">        QPushButton {
+            background-color: rgb(41, 152, 255); 
+			  color: white;
+			  border-radius: 10px;
+        }
+        QPushButton:hover {
+            background-color: rgb(19, 88, 152);
+			  color:rgb(213, 235, 255)
+        }
+</string>
+        </property>
+        <property name="text">
+         <string>Run Simulation</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QPushButton" name="plan_button">
+        <property name="font">
+         <font>
+          <family>Berlin Sans FB Demi</family>
+          <pointsize>15</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">        QPushButton {
+            background-color: rgb(41, 152, 255); 
+			  color: white;
+			  border-radius: 10px;
+        }
+        QPushButton:hover {
+            background-color: rgb(19, 88, 152);
+			  color:rgb(213, 235, 255)
+        }
+			QPushButton:disabled {
+        background-color:rgb(79, 79, 79);
+		color:rgb(172, 172, 172)
+       }</string>
+        </property>
+        <property name="text">
+         <string>Plan a mission</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QLabel" name="missionPlaningLabel">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>341</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>13</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:rgb(0, 255, 30)</string>
+     </property>
+     <property name="text">
+      <string>Mission Planning</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="layoutWidget_6">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>70</y>
+       <width>621</width>
+       <height>131</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_6">
+      <item row="1" column="1">
+       <widget class="QLCDNumber" name="lcd_speed_3">
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(80, 80, 80);
+color:rgb(0, 200, 40)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QLCDNumber" name="lcd_battery_3">
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(80, 80, 80);
+color:rgb(0, 200, 40)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLCDNumber" name="lcd_altitude_3">
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(80, 80, 80);
+color:rgb(0, 200, 40)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLabel" name="label_6">
+        <property name="font">
+         <font>
+          <pointsize>13</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color:white;
+</string>
+        </property>
+        <property name="text">
+         <string>Speed (m/s)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_3">
+        <property name="font">
+         <font>
+          <pointsize>13</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color:white;
+</string>
+        </property>
+        <property name="text">
+         <string>Altitude (m)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QLabel" name="label_11">
+        <property name="font">
+         <font>
+          <pointsize>13</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color:white;
+</string>
+        </property>
+        <property name="text">
+         <string>Battery (%)</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QLabel" name="label_12">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>220</y>
+       <width>150</width>
+       <height>62</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>13</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:white;
+</string>
+     </property>
+     <property name="text">
+      <string>Mode:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="mode_label">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>220</y>
+       <width>150</width>
+       <height>62</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>13</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:white;
+background-color:rgb(75, 75, 75)</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>2748</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
